@@ -40,6 +40,7 @@ app.post('/order', (req, res) => {
 })
 app.get('/order', (req, res) => {
     res.render('workOrder')
+    res.end()
 })
 
 app.listen(process.env.PORT, console.log('listening on PORT...'))
