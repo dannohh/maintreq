@@ -11,9 +11,7 @@ app.set('view engine', 'ejs')
 
 app.use(express.static('public'))
 
-const accountSid = process.env.TWILIO_ACCOUNT_SID;
-const authToken = process.env.TWILIO_AUTH_TOKEN;
-const client = require('twilio')(accountSid, authToken);
+
 
 app.get('/', (req, res) => {
     res.render('index')
@@ -49,4 +47,4 @@ app.get('/order', (req, res) => {
     res.end()
 })
 
-app.listen(process.env.PORT || 3000, console.log('listening on PORT...'))
+app.listen(process.env.PORT, console.log('listening on PORT...'))
