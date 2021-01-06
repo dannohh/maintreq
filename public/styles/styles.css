@@ -1,0 +1,40 @@
+.main {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 2fr 5fr 1fr;
+}
+div {
+  background: gray;
+}
+.header {
+  background: lightblue;
+  grid-column: 1/4;
+  grid-row: 1;
+  padding: 2em;
+}
+.task-view {
+  background: lightseagreen;
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+.menu {
+  background: lightblue;
+}
+.footer {
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+.list-item {
+  padding: 30px;
+  border-radius: 20px;
+  background: #fff;
+  list-style: none;
+  color: black;
+  margin: 1em;
+}
+a {
+  text-decoration: none;
+}
