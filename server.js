@@ -23,13 +23,7 @@ app.get('/', (req, res) => {
 app.post('/order', (req, res) => {
     console.log('got request')
     
-    client.messages
-  .create({
-     body: `${req.body.textArea} ${req.body.houseNumber} ${req.body.streetName}`,
-     from: '+14696096299',
-     to: '+16362344679'
-   })
-  .then(message => console.log(message.sid))
+
 
     res.send(`<div 
     style="display: flex; 
