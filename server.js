@@ -42,4 +42,4 @@ app.get('/order', (req, res) => {
     res.render('workOrder')
 })
 
-app.listen(3000, console.log('listening on PORT...'))
+app.listen(process.env.PORT, console.log('listening on PORT...'))
