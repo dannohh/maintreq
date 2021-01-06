@@ -55,4 +55,4 @@ app.get('/order', (req, res) => {
     res.end()
 })
 
-app.listen(3000 || process.env.PORT, console.log('listening on PORT...'))
+app.listen(process.env.PORT, console.log('listening on PORT...'))
