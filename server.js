@@ -46,8 +46,6 @@ app.post('/order', (req, res) => {
     <a href="/">Back to Dash</a>
     </div>`)
     console.log(req.body)
-
-
     res.end()
 })
 app.get('/order', (req, res) => {

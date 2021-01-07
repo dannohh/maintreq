@@ -17,7 +17,11 @@
         <div class="list-item"><a>link 3</a></div>
         <div class="list-item"><a>link 4</a></div>
       </div>
-      <div class="task-view">Tasks to complete</div>
+      <div class="task-view">
+        <div class="viewer">
+          Lawn mowing schedule and updates and snow plow updates
+        </div>
+      </div>
       <div class="footer">
         <p>
           Author: Dannohh!!<br />
@@ -25,5 +29,8 @@
         </p>
       </div>
     </div>
+    <script>
+      document.querySelector(".viewer").innerHTML = new Date();
+    </script>
   </body>
 </html>
