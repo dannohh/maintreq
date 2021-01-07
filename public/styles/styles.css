@@ -52,3 +52,30 @@ a {
   border: 1px solid lightgray;
   box-shadow: 0px 5px 5px 2px gray;
 }
+@media screen and (max-width: 600px) {
+  .main {
+    font-family: "Inter", sans-serif;
+    height: 100vh;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2fr 5fr 1fr;
+  }
+  .header {
+    grid-column: 1/4;
+  }
+  .menu {
+    grid-column: 1/4;
+    grid-row: 2;
+  }
+  .task-view {
+    grid-column: 1/5;
+    grid-row: 3;
+  }
+  .viewer {
+    margin: 1em;
+  }
+  .footer {
+    grid-row: 4;
+  }
+}
