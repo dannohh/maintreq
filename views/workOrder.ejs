@@ -13,6 +13,7 @@
   </head>
   <body style="height: 100vh">
     <h1>New Maintenance Request</h1>
+
     <form action="https://maintreq.herokuapp.com/order" method="POST">
       <label for="name"></label>
       <input
@@ -28,7 +29,7 @@
         type="text"
         id="houseNumber"
         name="houseNumber"
-        placeholder="Your house number"
+        placeholder="Address"
       />
       <label for="streetName"></label>
       <input
@@ -36,13 +37,14 @@
         type="text"
         id="streetName"
         name="streetName"
-        placeholder="Your street Name"
+        placeholder="Contact Number"
       />
       <textarea
         type="text"
         class="textArea"
         id="textArea"
         name="textArea"
+        placeholder="Tell us about the issue"
       ></textarea>
 
       <button class="button">Submit Order</button>
