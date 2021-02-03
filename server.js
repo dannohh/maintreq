@@ -3,6 +3,7 @@ const app = express()
 const dotenv = require('dotenv')
 dotenv.config()
 
+const PORT = 3000 || dotenv.PORT
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -53,4 +54,4 @@ app.get('/order', (req, res) => {
     res.end()
 })
 
-app.listen(3000, console.log('listening on PORT...'))
+app.listen(PORT, console.log('listening on PORT...'))
